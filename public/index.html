@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <meta name="description"
     content="この世に２種類のぶりっ子が存在します。そこでAIがあなたのぶりっこの種類を「やってる」か「天然」かを判定いたします。" />
      <!-- OGP -->
@@ -20,13 +22,12 @@
     content="この世に２種類のぶりっ子が存在します。そこでAIがあなたのぶりっこの種類を「やってる」か「天然」かを判定いたします。" />
     <meta name="twitter:image:src" content="https://flirts.herokuapp.com/static/img/logo.da3f58a.jpg" />
     <!-- /Twittwr -->
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
-　　 <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
-
-    <title>あなたは「やってる？」それとも「天然?」 診断アプリ</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
