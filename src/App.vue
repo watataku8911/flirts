@@ -5,8 +5,9 @@
     </div>
     <div v-show="!show">
       <Appheader></Appheader>
+      <div class="module--spacing"></div>
       <main>
-        <router-view />
+        <HelloWorld />
       </main>
       <Appfooter></Appfooter>
     </div>
@@ -17,12 +18,14 @@
 import Appheader from './components/Appheader'
 
 import Appfooter from './components/Appfooter'
+import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
     Appheader,
-    Appfooter
+    Appfooter,
+    HelloWorld
   },
   data() {
     return {
@@ -54,5 +57,9 @@ export default {
 
 .opning img {
   max-width: 100%;
+}
+
+.module--spacing {
+  height: 50px;
 }
 </style>
