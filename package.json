@@ -21,6 +21,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
+<<<<<<< HEAD
   "eslintConfig": {
     "root": true,
     "env": {
@@ -34,6 +35,11 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+=======
+  "engines": {
+    "node": ">= 15.11.0",
+    "npm": ">= 7.6.0"
+>>>>>>> 9cd1dc58a783330f7ba3bf0168a9ddd588fbae17
   },
   "browserslist": [
     "> 1%",
